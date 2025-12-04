@@ -1,0 +1,91 @@
+LEVEL 1 — BASIC XPATH PRACTICE
+Q1. Locate the Email input
+<input type="text" id="emailInput" name="email">
+👉 Write XPath using attribute.
+________________________________________
+Q2. Locate the Login button by text
+<button>Login</button>
+👉 Write XPath using text().
+________________________________________
+Q3. Locate the link using partial match
+<a href="/signup-now">Create Account</a>
+👉 Write XPath using contains(text()).
+________________________________________
+Q4. Locate the password field using * tag
+<input type="password" class="input-field" id="pass123">
+👉 Write XPath using //*.
+________________________________________
+🔵 LEVEL 2 — DYNAMIC XPATH PRACTICE
+Q5. Dynamic ID
+<input id="user_98374_name" type="text">
+👉 Use contains() to handle dynamic part.
+________________________________________
+Q6. Starts-with()
+<button id="submit-btn-final">Submit</button>
+👉 Write XPath with starts-with(@id,...)
+________________________________________
+Q7. Multiple match indexing
+<input type="text" class="search">
+<input type="text" class="search">
+<input type="text" class="search">
+👉 Write XPath for 2nd input.
+________________________________________
+🟣 LEVEL 3 — AXES PRACTICE
+Q8. following-sibling
+<label>Email</label>
+<input type="text" id="emailBox">
+👉 Locate the input using the label.
+________________________________________
+Q9. parent axis
+<div class="form-group">
+    <input id="phone">
+</div>
+👉 Write XPath to locate the div using input.
+________________________________________
+Q10. ancestor
+<form id="loginForm">
+    <div class="field">
+        <input id="username">
+    </div>
+</form>
+👉 Locate the form using input.
+________________________________________
+Q11. descendant
+<ul id="menu">
+    <li><a>About</a></li>
+    <li><a>Services</a></li>
+    <li><a>Contact</a></li>
+</ul>
+👉 Write XPath to locate all anchors inside menu.
+________________________________________
+🔥 LEVEL 4 — COMPLEX UI PRACTICE
+Q12. Table XPath
+Find the value in row 3, column 2:
+<table>
+  <tr><td>A1</td><td>B1</td></tr>
+  <tr><td>A2</td><td>B2</td></tr>
+  <tr><td>A3</td><td>B3</td></tr>
+</table>
+________________________________________
+Q13. Dropdown list item
+<div class="dropdown">
+    <span class="item">India</span>
+    <span class="item">Canada</span>
+    <span class="item">USA</span>
+</div>
+👉 Write XPath for “Canada”.
+________________________________________
+Q14. Complex label-input pair
+<div class="row">
+    <label>Username</label>
+    <input type="text" id="userField">
+</div>
+👉 Write XPath using text-based label → input using following-sibling.
+________________________________________
+Q15. Locate element using normalize-space()
+<button>
+    Submit    
+</button>
+(Has extra spaces)
+👉 Write XPath using normalize-space().
+
