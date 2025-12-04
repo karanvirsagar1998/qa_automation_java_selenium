@@ -1,0 +1,197 @@
+1️⃣ Core Java Fundamentals (prerequisite)
+
+Before Selenium, make sure you are comfortable with:
+
+OOP (classes, objects)
+
+methods
+
+loops & conditions
+
+arrays/lists
+
+constructors
+
+string operations
+
+👉 You already know Java basics — so you’re ready.
+
+2️⃣ Locators & XPath Mastery (FOUNDATION of Everything)
+
+This is the MOST IMPORTANT & FIRST topic because:
+
+Every element interaction needs a locator
+
+POM needs locators
+
+Framework needs locators
+
+No XPath → No Selenium
+
+What to learn:
+
+Basic XPath
+
+Dynamic XPath: contains(), starts-with()
+
+Indexing
+
+Axes: following-sibling, ancestor, descendant
+
+Handling complex UIs
+
+👉 You already started — good.
+
+3️⃣ WebDriver + Browser Interaction
+
+Learn how Selenium works:
+
+get()
+
+navigate()
+
+getTitle()
+
+getCurrentUrl()
+
+findElement / findElements
+
+click(), sendKeys()
+
+isDisplayed(), isEnabled()
+
+handling links, buttons, inputs
+
+👉 Simple but essential.
+
+4️⃣ Waits & Synchronization (to avoid flaky scripts)
+
+Learn:
+
+implicit wait
+
+explicit wait
+
+fluent wait
+
+Why Thread.sleep is bad
+
+Waiting for:
+
+element visible
+
+clickable
+
+invisible
+
+attribute changes
+
+👉 This is the difference between real QA and beginner QA.
+
+5️⃣ Handling Windows, Frames, Alerts
+
+Because every real project includes:
+
+switching tabs/windows
+
+switching frames/iframes
+
+handling JS alerts
+
+actions class (hover, drag & drop)
+
+👉 Must learn before framework.
+
+6️⃣ WebDriver Advanced Actions
+
+Actions class
+
+Robot class
+
+JavaScript Executor
+
+Scrolling
+
+Handling hidden elements
+
+File upload/download
+
+You will use these in complex test cases.
+
+7️⃣ TestNG Framework
+
+This is where real automation begins.
+
+Learn:
+
+@Test
+
+@BeforeMethod / @AfterMethod
+
+@BeforeClass / @AfterClass
+
+Assertions
+
+SoftAssert
+
+Groups
+
+Parallel execution
+
+TestNG XML
+
+Retry Analyzer
+
+👉 You cannot build a framework without TestNG.
+
+8️⃣ Page Object Model (POM)
+
+After TestNG, build:
+
+Page classes
+
+PageFactory
+
+Reusable methods
+
+No duplication
+
+Clean test scripts
+
+👉 POM is asked in every interview.
+
+9️⃣ Data-Driven Testing
+
+Using:
+
+Excel
+
+JSON
+
+Properties file
+
+TestNG DataProvider
+
+👉 Required for real-world projects.
+
+🔟 Automation Framework Architecture (FINAL & MOST IMPORTANT)
+
+Bring everything together:
+
+BaseTest
+
+BasePage
+
+DriverManager
+
+Logger
+
+Utilities: wait, screenshot
+
+Reusable methods
+
+Test structure
+
+Reporting
+
+👉 This is what companies EXPECT you to know.
