@@ -1,0 +1,222 @@
+🔥 CODING & TECHNICAL QUESTIONS (VERY IMPORTANT)
+🧠 SECTION 1: Core Java Coding Questions
+
+These test whether you can actually write Java — not just talk.
+
+1️⃣ Reverse a String (without using reverse())
+Input: "Selenium"
+Output: "muineleS"
+
+
+Follow-ups they may ask:
+
+Using recursion?
+
+Using StringBuilder?
+
+Time complexity?
+
+2️⃣ Find duplicate characters in a String
+Input: "automation"
+Output: a, t, o
+
+
+They check:
+
+Use of Map
+
+Clean logic
+
+Edge cases
+
+3️⃣ Find the largest / second largest number in an array
+int[] arr = {10, 45, 2, 99, 23};
+
+4️⃣ Check if a number is palindrome
+Input: 121 → true
+Input: 123 → false
+
+5️⃣ Count vowels in a String
+Input: "Cognizant"
+Output: 3
+
+6️⃣ Sort an array without using built-in sort
+
+They check:
+
+Bubble sort understanding
+
+Loops & swapping
+
+7️⃣ Difference between == and .equals() (with code)
+
+They WILL ask you to write code and explain output.
+
+🧠 SECTION 2: Java OOP & Framework Coding
+
+These test how you design automation frameworks.
+
+8️⃣ Write a BaseTest class
+
+They expect:
+
+WebDriver initialization
+
+Browser parameterization
+
+Teardown
+
+public class BaseTest {
+    protected WebDriver driver;
+
+    @BeforeMethod
+    public void setup() {
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        driver.quit();
+    }
+}
+
+9️⃣ Create a Page Object Model class
+
+They want to see:
+
+Locators
+
+Actions
+
+No test logic
+
+🔟 How would you design a reusable click method with wait?
+
+They expect something like:
+
+public void click(WebElement element) {
+    new WebDriverWait(driver, Duration.ofSeconds(10))
+        .until(ExpectedConditions.elementToBeClickable(element))
+        .click();
+}
+
+🧠 SECTION 3: Selenium Practical Coding Questions
+
+These are VERY common.
+
+1️⃣1️⃣ Write code to handle a dropdown (3 ways)
+
+Select class
+
+Click options
+
+JavaScript
+
+1️⃣2️⃣ Handle alerts (accept, dismiss, get text)
+
+They may ask:
+
+“How do you know if OK or Cancel was clicked?”
+
+1️⃣3️⃣ Switch between multiple windows and close child window
+1️⃣4️⃣ Explicit wait for dynamic element
+1️⃣5️⃣ Take screenshot on failure
+
+They expect:
+
+TakesScreenshot
+
+Save with timestamp
+
+1️⃣6️⃣ Read data from Excel
+
+They check:
+
+Apache POI basics
+
+Data-driven testing concept
+
+🧠 SECTION 4: TestNG Coding Tasks
+
+They WILL ask these if you say “I know TestNG”.
+
+1️⃣7️⃣ Write a TestNG XML for parallel execution
+<suite parallel="tests" thread-count="3">
+
+1️⃣8️⃣ Implement RetryAnalyzer
+
+They want working logic.
+
+1️⃣9️⃣ Use SoftAssert in a test case
+2️⃣0️⃣ Group tests and run only "smoke"
+🧠 SECTION 5: Debugging & Scenario Questions (VERY REAL)
+
+These separate juniors from professionals.
+
+2️⃣1️⃣ Test passes locally, fails in Jenkins — why?
+
+Expected answers:
+
+Headless mode issues
+
+Timing issues
+
+Resolution
+
+Environment mismatch
+
+2️⃣2️⃣ Locator keeps changing daily — what will you do?
+
+They expect:
+
+Ask dev for data-testid
+
+Use stable parent/child
+
+Avoid index-based XPath
+
+2️⃣3️⃣ How would you automate a CAPTCHA page?
+
+Correct answer:
+
+CAPTCHA should NOT be automated — validate functionality via API or bypass in test env.
+
+2️⃣4️⃣ How do you handle flaky tests?
+
+Expected:
+
+Proper waits
+
+Retry logic
+
+Remove Thread.sleep
+
+Logging + screenshots
+
+🧠 SECTION 6: API + DB Technical Questions
+
+Even if UI role, they test awareness.
+
+2️⃣5️⃣ Write a simple RestAssured GET request
+2️⃣6️⃣ Validate JSON response fields
+2️⃣7️⃣ JDBC code to fetch data
+🧠 SECTION 7: Trick Questions (VERY IMPORTANT)
+
+Interviewers love these.
+
+2️⃣8️⃣ Why Thread.sleep is bad?
+2️⃣9️⃣ Can Selenium automate mobile apps?
+3️⃣0️⃣ Difference between Selenium Grid and parallel execution?
+🎯 MOST IMPORTANT ADVICE (This Wins Jobs)
+
+When answering coding questions:
+
+✔ Write clean code
+✔ Explain why you chose that approach
+✔ Talk while coding
+✔ Mention real project usage
+
+Example:
+
+“I use this method in my framework to avoid flaky tests.”
